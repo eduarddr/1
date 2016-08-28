@@ -163,6 +163,8 @@ nav{
   animation: aboutcodeshow 1s ease-in-out forwards;
   animation-delay: 3.5s;
   color: white;
+  border-top: 15px solid grey;
+  border-top-left-radius: 15px;
 }
 @keyframes aboutcodeshow{
   0%{
@@ -232,7 +234,7 @@ nav{
   position: absolute;
   height: 470px;
   background-color: #ddb798;
-  margin-top: -123px;
+  margin-top: -108px;
   animation: hideskills 1s ease-in-out forwards;
   animation-delay: 3s;
   opacity: 0;
@@ -455,4 +457,34 @@ img{
   display: inline-block;
   background-color: inherit;
   border: 1px solid black;
+}
+.projects{
+  text-transform: uppercase;
+  font-family: Quicksand;
+  text-align: center;
+  font-size: 120px;
+  color: black;
+  position: relative;
+  background-color: snow;
+  width: 0%;
+  height: 800px;
+  opacity: 0;
+  animation: hideabout 1s ease-in-out forwards;
+  animation-delay: 3s;
+  margin-top: 600px;
+}
+.contact{
+  text-transform: uppercase;
+  font-family: Quicksand;
+  text-align: center;
+  font-size: 120px;
+  color: black;
+  z-index: -1;
+  position: relative;
+  background-color: #ddb798;
+  width: 0%;
+  height: 600px;
+  opacity: 0;
+  animation: hideabout 1s ease-in-out forwards;
+  animation-delay: 3s;
 }
