@@ -5,9 +5,9 @@ html,body,head,a,h1,h2,h3,h4,h5,h6,pre,sup,sub {
 header{
   width: 100%;
   margin-top: -7%;
-  background-image: url('../assets/type-away.jpg');
+  background-image: url('../assets/header_pic.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: fill;
   height: 600px;
   animation: dragdown 2s ease-in-out forwards;
   opacity: 0.8;
@@ -17,16 +17,16 @@ header{
     height: 2px;
   }
   20%{
-    height: 10px;
+    height: 60px;
   }
   50%{
-    height: 5px;
-  }
-  70%{
     height: 10px;
   }
+  70%{
+    height: 200px;
+  }
   80%{
-    height: 5px;
+    height: 100px;
   }
   100%{
     height: 700px;
@@ -233,9 +233,19 @@ nav{
   height: 470px;
   background-color: #ddb798;
   margin-top: -123px;
-  animation: hideabout 1s ease-in-out forwards;
+  animation: hideskills 1s ease-in-out forwards;
   animation-delay: 3s;
   opacity: 0;
+}
+@keyframes hideskills {
+  0%{
+    width: 0%;
+    opacity: 0;
+  }
+  100%{
+    width: 100%;
+    opacity: 0.9;
+  }
 }
 .skillstext{
   font-family: Quicksand;
@@ -262,56 +272,13 @@ img{
   font-size: 20px;
 
 }
-.htmlBubbles1{
-  animation: fillbubbles 1s ease-in-out forwards;
-  animation-delay: 6s;
-}
-.htmlBubbles2{
-  animation: fillbubbles 1s ease-in-out forwards;
-  animation-delay: 6.1s;
-}
-.htmlBubbles3{
-  animation: fillbubbles 1s ease-in-out forwards;
-  animation-delay: 6.2s;
-}
-.htmlBubbles4{
-  animation: fillbubbles 1s ease-in-out forwards;
-  animation-delay: 6.3s;
-}
-.htmlBubbles5{
-  animation: fillbubbles 1s ease-in-out forwards;
-  animation-delay: 6.4s;
-}
-.htmlBubbles6{
-  animation: fillbubbles 1s ease-in-out forwards;
-  animation-delay: 6.5s;
-}
-.htmlBubbles7{
-  animation: fillbubbles 1s ease-in-out forwards;
-  animation-delay: 6.6s;
-}
-.htmlBubbles8{
-  animation: fillbubbles 1s ease-in-out forwards;
-  animation-delay: 6.7s;
-}
 .htmlBubbles1, .htmlBubbles2, .htmlBubbles3, .htmlBubbles4, .htmlBubbles5, .htmlBubbles6, .htmlBubbles7, .htmlBubbles8{
   margin-top: 10px;
   display: inline-block;
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
-  background-color: inherit;
-  border: 1px solid black;
-}
-@keyframes fillbubbles {
-  0%{
-
-  }
-  100%{
-    width:10px;
-    height: 10px;
-    background-color:black;
-  }
+  background-color: black;
 }
 .htmlBubbles9, .htmlBubbles10{
   margin-top: 10px;
@@ -322,42 +289,15 @@ img{
   background-color: inherit;
   border: 1px solid black;
 }
-.cssBubbles1{
-  animation: fillbubbles 1s ease-in-out forwards;
-  animation-delay: 6s;
-  }
-.cssBubbles2{
-  animation: fillbubbles 1s ease-in-out forwards;
-  animation-delay: 6.1s;
-  }
-.cssBubbles3{
-  animation: fillbubbles 1s ease-in-out forwards;
-  animation-delay: 6.2s;
-  }
-  .cssBubbles4{
-    animation: fillbubbles 1s ease-in-out forwards;
-    animation-delay: 6.3s;
-  }
-  .cssBubbles5{
-    animation: fillbubbles 1s ease-in-out forwards;
-    animation-delay: 6.4s;
-  }
-  .cssBubbles6{
-    animation: fillbubbles 1s ease-in-out forwards;
-    animation-delay: 6.5s;
-  }
-  .cssBubbles7{
-    animation: fillbubbles 1s ease-in-out forwards;
-    animation-delay: 6.6s;
-  }
+
+
 .cssBubbles1, .cssBubbles2, .cssBubbles3, .cssBubbles4, .cssBubbles5, .cssBubbles6, .cssBubbles7{
   margin-top: 10px;
   display: inline-block;
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
-  background-color: inherit;
-  border: 1px solid black;
+  background-color: black;
 }
 .cssBubbles8, .cssBubbles9, .cssBubbles10{
   margin-top: 10px;
@@ -368,38 +308,13 @@ img{
   background-color: inherit;
   border: 1px solid black;
 }
-.lessBubbles1{
-  animation: fillbubbles 1s ease-in-out forwards;
-  animation-delay: 6s;
-}
-.lessBubbles2{
-  animation: fillbubbles 1s ease-in-out forwards;
-  animation-delay: 6.1s;
-}
-.lessBubbles3{
-  animation: fillbubbles 1s ease-in-out forwards;
-  animation-delay: 6.2s;
-}
-.lessBubbles4{
-  animation: fillbubbles 1s ease-in-out forwards;
-  animation-delay: 6.3s;
-}
-.lessBubbles5{
-  animation: fillbubbles 1s ease-in-out forwards;
-  animation-delay: 6.4s;
-}
-.lessBubbles6{
-  animation: fillbubbles 1s ease-in-out forwards;
-  animation-delay: 6.5s;
-}
 .lessBubbles1, .lessBubbles2, .lessBubbles3, .lessBubbles4, .lessBubbles5, .lessBubbles6{
   margin-top: 10px;
   display: inline-block;
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
-  background-color: inherit;
-  border: 1px solid black;
+  background-color: black;
 }
 .lessBubbles7, .lessBubbles8, .lessBubbles9, .lessBubbles10{
   margin-top: 10px;
@@ -410,42 +325,13 @@ img{
   background-color: inherit;
   border: 1px solid black;
 }
-.sassBubbles1{
-  animation: fillbubbles 1s ease-in-out forwards;
-  animation-delay: 6s;
-}
-.sassBubbles2{
-  animation: fillbubbles 1s ease-in-out forwards;
-  animation-delay: 6.1s;
-}
-.sassBubbles3{
-  animation: fillbubbles 1s ease-in-out forwards;
-  animation-delay: 6.2s;
-}
-.sassBubbles4{
-  animation: fillbubbles 1s ease-in-out forwards;
-  animation-delay: 6.3s;
-}
-.sassBubbles5{
-  animation: fillbubbles 1s ease-in-out forwards;
-  animation-delay: 6.4s;
-}
-.sassBubbles6{
-  animation: fillbubbles 1s ease-in-out forwards;
-  animation-delay: 6.5s;
-}
-.sassBubbles7{
-  animation: fillbubbles 1s ease-in-out forwards;
-  animation-delay: 6.6s;
-}
 .sassBubbles1, .sassBubbles2, .sassBubbles3, .sassBubbles4, .sassBubbles5, .sassBubbles6, .sassBubbles7{
   margin-top: 10px;
   display: inline-block;
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
-  background-color: inherit;
-  border: 1px solid black;
+  background-color: black;
 }
 .sassBubbles8, .sassBubbles9, .sassBubbles10{
   margin-top: 10px;
@@ -456,38 +342,13 @@ img{
   background-color: inherit;
   border: 1px solid black;
 }
-.jsBubbles1{
-  animation: fillbubbles 1s ease-in-out forwards;
-  animation-delay: 6s;
-}
-.jsBubbles2{
-  animation: fillbubbles 1s ease-in-out forwards;
-  animation-delay: 6.1s;
-}
-.jsBubbles3{
-  animation: fillbubbles 1s ease-in-out forwards;
-  animation-delay: 6.2s;
-}
-.jsBubbles4{
-  animation: fillbubbles 1s ease-in-out forwards;
-  animation-delay: 6.3s;
-}
-.jsBubbles5{
-  animation: fillbubbles 1s ease-in-out forwards;
-  animation-delay: 6.4s;
-}
-.jsBubbles6{
-  animation: fillbubbles 1s ease-in-out forwards;
-  animation-delay: 6.5s;
-}
 .jsBubbles1, .jsBubbles2, .jsBubbles3, .jsBubbles4, .jsBubbles5, .jsBubbles6{
   margin-top: 10px;
   display: inline-block;
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
-  background-color: inherit;
-  border: 1px solid black;
+  background-color: black;
 }
 .jsBubbles7, .jsBubbles8, .jsBubbles9, .jsBubbles10{
   margin-top: 10px;
@@ -498,34 +359,13 @@ img{
   background-color: inherit;
   border: 1px solid black;
 }
-.jqBubbles1{
-  animation: fillbubbles 1s ease-in-out forwards;
-  animation-delay: 6s;
-}
-.jqBubbles2{
-  animation: fillbubbles 1s ease-in-out forwards;
-  animation-delay: 6.1s;
-}
-.jqBubbles3{
-  animation: fillbubbles 1s ease-in-out forwards;
-  animation-delay: 6.2s;
-}
-.jqBubbles4{
-  animation: fillbubbles 1s ease-in-out forwards;
-  animation-delay: 6.3s;
-}
-.jqBubbles5{
-  animation: fillbubbles 1s ease-in-out forwards;
-  animation-delay: 6.4s;
-}
 .jqBubbles1, .jqBubbles2, .jqBubbles3, .jqBubbles4, .jqBubbles5{
   margin-top: 10px;
   display: inline-block;
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
-  background-color: inherit;
-  border: 1px solid black;
+  background-color: black;
 }
 .jqBubbles6, .jqBubbles7, .jqBubbles8, .jqBubbles9, .jqBubbles10{
   margin-top: 10px;
@@ -548,34 +388,13 @@ img{
   display: grid;
   font-size: 20px;
 }
-.nodeBubbles1{
-  animation: fillbubbles 1s ease-in-out forwards;
-  animation-delay: 6s;
-}
-.nodeBubbles2{
-  animation: fillbubbles 1s ease-in-out forwards;
-  animation-delay: 6.1s;
-}
-.nodeBubbles3{
-  animation: fillbubbles 1s ease-in-out forwards;
-  animation-delay: 6.2s;
-}
-.nodeBubbles4{
-  animation: fillbubbles 1s ease-in-out forwards;
-  animation-delay: 6.3s;
-}
-.nodeBubbles5{
-  animation: fillbubbles 1s ease-in-out forwards;
-  animation-delay: 6.4s;
-}
 .nodeBubbles1, .nodeBubbles2, .nodeBubbles3, .nodeBubbles4, .nodeBubbles5{
   margin-top: 10px;
   display: inline-block;
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
-  background-color: inherit;
-  border: 1px solid black;
+  background-color: black;
 }
 .nodeBubbles6, .nodeBubbles7, .nodeBubbles8, .nodeBubbles9, .nodeBubbles10{
   margin-top: 10px;
@@ -586,22 +405,13 @@ img{
   background-color: inherit;
   border: 1px solid black;
 }
-.phpBubbles1{
-  animation: fillbubbles 1s ease-in-out forwards;
-  animation-delay: 6s;
-}
-.phpBubbles2{
-  animation: fillbubbles 1s ease-in-out forwards;
-  animation-delay: 6.1s;
-}
 .phpBubbles1, .phpBubbles2{
   margin-top: 10px;
   display: inline-block;
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
-  background-color: inherit;
-  border: 1px solid black;
+  background-color: black;
 }
 .phpBubbles3, .phpBubbles4, .phpBubbles5, .phpBubbles6, .phpBubbles7, .phpBubbles8, .phpBubbles9, .phpBubbles10{
   margin-top: 10px;
@@ -612,38 +422,13 @@ img{
   background-color: inherit;
   border: 1px solid black;
 }
-.mongoBubbles1{
-  animation: fillbubbles 1s ease-in-out forwards;
-  animation-delay: 6s;
-}
-.mongoBubbles2{
-  animation: fillbubbles 1s ease-in-out forwards;
-  animation-delay: 6.1s;
-}
-.mongoBubbles3{
-  animation: fillbubbles 1s ease-in-out forwards;
-  animation-delay: 6.2s;
-}
-.mongoBubbles4{
-  animation: fillbubbles 1s ease-in-out forwards;
-  animation-delay: 6.3s;
-}
-.mongoBubbles5{
-  animation: fillbubbles 1s ease-in-out forwards;
-  animation-delay: 6.4s;
-}
-.mongoBubbles6{
-  animation: fillbubbles 1s ease-in-out forwards;
-  animation-delay: 6.5s;
-}
 .mongoBubbles1, .mongoBubbles2, .mongoBubbles3, .mongoBubbles4, .mongoBubbles5, .mongoBubbles6{
   margin-top: 10px;
   display: inline-block;
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
-  background-color: inherit;
-  border: 1px solid black;
+  background-color: black;
 }
 .mongoBubbles7, .mongoBubbles8, .mongoBubbles9, .mongoBubbles10{
   margin-top: 10px;
@@ -654,34 +439,13 @@ img{
   background-color: inherit;
   border: 1px solid black;
 }
-.sqlBubbles1{
-  animation: fillbubbles 1s ease-in-out forwards;
-  animation-delay: 6s;
-}
-.sqlBubbles2{
-  animation: fillbubbles 1s ease-in-out forwards;
-  animation-delay: 6.1s;
-}
-.sqlBubbles3{
-  animation: fillbubbles 1s ease-in-out forwards;
-  animation-delay: 6.2s;
-}
-.sqlBubbles4{
-  animation: fillbubbles 1s ease-in-out forwards;
-  animation-delay: 6.3s;
-}
-.sqlBubbles5{
-  animation: fillbubbles 1s ease-in-out forwards;
-  animation-delay: 6.4s;
-}
 .sqlBubbles1, .sqlBubbles2, .sqlBubbles3, .sqlBubbles4, .sqlBubbles5{
   margin-top: 10px;
   display: inline-block;
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
-  background-color: inherit;
-  border: 1px solid black;
+  background-color: black;
 }
 .sqlBubbles6, .sqlBubbles7, .sqlBubbles8, .sqlBubbles9, .sqlBubbles10{
   margin-top: 10px;
@@ -691,14 +455,4 @@ img{
   display: inline-block;
   background-color: inherit;
   border: 1px solid black;
-}
-@keyframes fillbubbles {
-  0%{
-
-  }
-  100%{
-    width:10px;
-    height: 10px;
-    background-color:black;
-  }
 }
